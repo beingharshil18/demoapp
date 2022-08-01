@@ -1,0 +1,23 @@
+//Buttons
+.primaryButton {
+  background: $primaryColor;
+  border: 1px solid $primaryColor;
+  border-radius: 20px;
+  text-align: center;
+  font-family: $subText;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  color: #ffffff;
+}
+
+.secondaryButton {
+  background: transparent;
+  border: 1px solid $primaryColor;
+  border-radius: 20px;
+  text-align: center;
+  font-family: $subText;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+}
