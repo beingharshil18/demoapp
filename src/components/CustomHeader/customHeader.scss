@@ -1,42 +1,53 @@
 @import "../../Styles/variables.scss";
-
+// .row {
+//   align-items: center;
+// }
 .navBar {
-  display: flex;
+  //   display: flex;
   padding: 25px 0 22px 0;
-  justify-content: space-between;
+  //   justify-content: space-between;
   border-bottom: 0.5px solid #dbdbdb;
-
-  .navRight {
-    display: flex;
-    align-items: center;
-    .navLinks {
-      a {
-        margin: 0 46px 0 0;
-        color: #1d191f;
-      }
-    }
-    .navIcon {
-      margin: 0 48px 0 0;
-    }
-    .navBtn {
-      display: flex;
-      align-items: center;
-      .profileDrpDown {
-        margin: 0 36px 0 0;
-        .profileBtn {
-          width: 28px;
-          height: 28px;
-          border-radius: 50%;
-          background: yellow;
-          border: none;
-        }
-      }
-      .btnPrimary {
-        padding: 5px 18px 6px 18px;
-        display: flex;
-        align-items: center;
-        gap: 6px;
-      }
+}
+// .navRight {
+//   display: flex;
+//   align-items: center;
+.navLinks {
+  .navLink {
+    // margin: 0 46px 0 0;
+    font-family: $Es;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #1d191f;
+    svg {
+      margin: 0 8px 0 0;
     }
   }
+  .home {
+    margin: 0 42px 0 0;
+  }
 }
+
+.navBtn {
+  display: flex;
+  align-items: center;
+  .profileDrpDown {
+    margin: 0 36px 0 10px;
+    .profileBtn {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: yellow;
+      border: none;
+      margin: 6px;
+    }
+  }
+  .btnPrimary {
+    padding: 5px 18px 6px 18px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+}
+// }

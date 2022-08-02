@@ -16,38 +16,49 @@ export default function CustomHeader() {
     <header>
       <div className="container">
         <div className="navBar">
-          <div className="logo">
-            <Logo />
-          </div>
-
-          <div className="navRight">
-            <div className="navLinks">
-              <a href="/">
-                <HomeIcon /> Homepage
-              </a>
-              <a href="/">
-                <PeopleIcon /> PeopleIcon
-              </a>
-            </div>
-
-            <div className="navIcon">
-              <a href="/">
-                <BellIcon />
-              </a>
-            </div>
-
-            <div className="navBtn">
-              <div className="profileDrpDown">
-                <button className="profileBtn">
-                  <UnionIcon />
-                </button>
-                <DropIcon />
+          <div className="row">
+            <div className="col-6">
+              <div className="logo">
+                <Logo />
               </div>
+            </div>
+            <div className="col-6">
+              {/* <div className="navRight"> */}
+              <div className="row">
+                <div className="col-6">
+                  <div className="navLinks">
+                    <a href="/" className="navLink home">
+                      <HomeIcon className="homeBtn" /> Homepage
+                    </a>
+                    <a href="/" className="navLink">
+                      <PeopleIcon /> Client List
+                    </a>
+                  </div>
+                </div>
+                <div className="col-1">
+                  <div className="navIcon">
+                    <a href="/">
+                      <BellIcon />
+                    </a>
+                  </div>
+                </div>
+                <div className="col-5">
+                  <div className="navBtn">
+                    <div className="profileDrpDown">
+                      <button className="profileBtn">
+                        <UnionIcon />
+                      </button>
+                      <DropIcon />
+                    </div>
 
-              <button className="btnPrimary">
-                <span>Send Invoice</span>
-                <NavBtn />
-              </button>
+                    <button className="btnPrimary">
+                      <span>Send Invoice</span>
+                      <NavBtn />
+                    </button>
+                  </div>
+                </div>
+              </div>
+              {/* </div> */}
             </div>
           </div>
         </div>

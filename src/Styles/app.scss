@@ -21,6 +21,24 @@ a {
   max-width: 1196px;
   margin: 0 auto;
 }
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+  font-weight: 0;
+  line-height: 0;
+}
 
 //Button
 .btnPrimary {
@@ -48,12 +66,13 @@ a {
   font-size: 13px;
 }
 //cards-Styling
-.card {
+.customCard {
   background: #ffffff;
   border: 1px solid #dbdbdb;
   border-radius: 10px;
 }
 .cardHeading {
+  font-family: $Es;
   font-weight: 700;
   font-size: 15px;
   line-height: 16px;
@@ -84,4 +103,7 @@ a {
   font-weight: 400;
   font-size: 30px;
   line-height: 34px;
+  span {
+    color: #00c39e;
+  }
 }
