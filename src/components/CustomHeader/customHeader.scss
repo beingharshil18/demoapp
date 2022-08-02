@@ -1,0 +1,42 @@
+@import "../../Styles/variables.scss";
+
+.navBar {
+  display: flex;
+  padding: 25px 0 22px 0;
+  justify-content: space-between;
+  border-bottom: 0.5px solid #dbdbdb;
+
+  .navRight {
+    display: flex;
+    align-items: center;
+    .navLinks {
+      a {
+        margin: 0 46px 0 0;
+        color: #1d191f;
+      }
+    }
+    .navIcon {
+      margin: 0 48px 0 0;
+    }
+    .navBtn {
+      display: flex;
+      align-items: center;
+      .profileDrpDown {
+        margin: 0 36px 0 0;
+        .profileBtn {
+          width: 28px;
+          height: 28px;
+          border-radius: 50%;
+          background: yellow;
+          border: none;
+        }
+      }
+      .btnPrimary {
+        padding: 5px 18px 6px 18px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+    }
+  }
+}

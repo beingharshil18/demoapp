@@ -1,10 +1,13 @@
 import "./App.css";
+import "./Styles/variables.scss";
+import LandingPage from "./Pages/LandingPage/LandingPage";
 
+import React from "react";
 function App() {
   return (
-    <div className="demoClass">
-      <h1>Hii this is my Demo App !</h1>
-    </div>
+    <>
+      <LandingPage />
+    </>
   );
 }
 

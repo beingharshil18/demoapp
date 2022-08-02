@@ -1,23 +1,87 @@
+@import "../Styles/variables.scss";
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $Abc;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: antialiased;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  max-width: 1196px;
+  margin: 0 auto;
+}
+
 //Button
-.primaryButton {
+.btnPrimary {
   background: $primaryColor;
   border: 1px solid $primaryColor;
   border-radius: 20px;
   text-align: center;
-  font-family: $subText;
+  font-family: $Es;
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
+  line-height: 20px;
   color: #ffffff;
 }
 
-.secondaryButton {
+.btnSecondary {
   background: transparent;
   border: 1px solid $primaryColor;
   border-radius: 20px;
   text-align: center;
-  font-family: $subText;
+  font-family: $Es;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  font-size: 13px;
+}
+//cards-Styling
+.card {
+  background: #ffffff;
+  border: 1px solid #dbdbdb;
+  border-radius: 10px;
+}
+.cardHeading {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 16px;
+}
+.cardText {
+  font-family: $Abc;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+}
+.cardsubText {
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
+  line-height: 16px;
+  color: #979797;
+}
+.aging {
+  font-family: $Abc;
+  font-style: normal;
+  font-weight: 400;
+  color: #8388ab;
+}
+
+.pricing {
+  font-family: $Es;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 34px;
 }

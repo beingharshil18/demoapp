@@ -1,28 +1,25 @@
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+@font-face {
+  font-family: ABC Whyte;
+  src: url(../Assets/fonts/ABCWhyte-Black.woff);
+  src: url(../Assets/fonts/ABCWhyte-Book.woff);
+  src: url(../Assets/fonts/ABCWhyte-Regular.woff);
 
-body {
-  font-family: $primaryFont;
+  font-family: ES Rebond Grotesque;
+  src: url(../Assets/fonts/ESRebondGrotesque-Regular.woff);
+  src: url(../Assets/fonts/ESRebondGrotesque-Bold.woff);
+  src: url(../Assets/fonts/ESRebondGrotesque-Medium.woff);
 }
 
 // fonts
-$primaryFont: "ABC Whyte";
-$secondaryFont: "ES Rebond Grotesque";
-$subText: "Euclid Circular A";
+$Abc: ABC Whyte;
+$Es: ES Rebond Grotesque;
+$Euclid: Euclid Circular A;
 
 //colors
 $primaryColor: #005fda;
 $secondaryColor: #8388ab;
 
 //mediaQuery
-
 $LaptopL: "only screen and (max-width : 1366px)";
 $Laptop: "only screen and (max-width : 1199px)";
 $Ipad: "only screen and (max-width : 1024px)";
