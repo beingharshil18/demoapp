@@ -2,8 +2,10 @@ import React from "react";
 import "../../Styles/variables.scss";
 import "../../Styles/app.scss";
 import "../LandingPage/landingPage.scss";
-import CustomHeader from "../../components/CustomHeader/CustomHeader.jsx";
-import { image } from "../../Styles/image.js";
+import CustomHeader from "../../components/CustomHeader/customHeader";
+import { ReactComponent as LargeUnionIcon } from "../../Assets/Images/largeUnion.svg";
+import { ReactComponent as ZigZag } from "../../Assets/Images/zigzag.svg";
+import { image } from "../../Styles/image";
 
 export default function LandingPage() {
   return (
@@ -11,8 +13,24 @@ export default function LandingPage() {
       <CustomHeader />
       <div className="wrapper">
         <div className="container">
-          <div className="row cardWrapper">
-            <div className="col-7">
+          <div className="row">
+            <div className="col-12">
+              <div className="userDetailWrapper">
+                <div className="userProfile">
+                  <LargeUnionIcon />
+                </div>
+                <div className="userDetail">
+                  <h3>Hooli HQ</h3>
+                  <a href="../../components/CustomHeader/customHeader">
+                    @hooliheadquarters
+                  </a>
+                  <span>Tech Company • NYC </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="row  cardWrapper">
+            <div className="col-7 col-md-">
               <div className="balance">
                 <div className="customCard">
                   <div className="cardHeader">
@@ -31,7 +49,7 @@ export default function LandingPage() {
                 </div>
               </div>
             </div>
-            <div className="col-5">
+            <div className="col-5 col-md-">
               <div className="payments">
                 <div className="customCard receive">
                   <div className="cardHeader">
@@ -63,96 +81,152 @@ export default function LandingPage() {
           </div>
 
           <div className="row cardWrapper">
-            <div className="col-7">
+            <div className="col-lg-7 col-md-12">
               <div className="notificationWrapper">
                 <div className="customCard">
                   <div className="cardHeader">
                     <h3 className="cardHeading">Notifications</h3>
                   </div>
                   <div className="cardBody">
-                    <div>
-                      <img src={image.Rectangle} alt="" />
-                    </div>
-                    <div className="cardContent">
+                    <div className="notificationList">
                       <div>
-                        <p className="cardText">
-                          Malu Romero sent an invoice for
-                          <a href="/"> Business A.</a>
-                        </p>
+                        <img src={image.Rectangle} alt="" />
                       </div>
-                      <span>1 hour ago</span>
+                      <div className="cardContent">
+                        <div>
+                          <p className="cardText">
+                            Malu Romero sent an invoice for{" "}
+                            <a href="/"> Business A.</a>
+                          </p>
+                        </div>
+                        <span>1 hour ago</span>
+                      </div>
+                    </div>
+                    <div className="notificationList">
+                      <div>
+                        <img src={image.Rectangle} alt="" />
+                      </div>
+                      <div className="cardContent">
+                        <div>
+                          <p className="cardText">
+                            Malu Romero sent an invoice for{" "}
+                            <a href="/"> Business A.</a>
+                          </p>
+                        </div>
+                        <span>1 hour ago</span>
+                      </div>
+                    </div>
+                    <div className="notificationList">
+                      <div>
+                        <img src={image.Rectangle} alt="" />
+                      </div>
+                      <div className="cardContent">
+                        <div>
+                          <p className="cardText">
+                            Malu Romero sent an invoice for{" "}
+                            <a href="/"> Business A.</a>
+                          </p>
+                        </div>
+                        <span>1 hour ago</span>
+                      </div>
+                    </div>
+                    <div className="notificationList">
+                      <div>
+                        <img src={image.Rectangle} alt="" />
+                      </div>
+                      <div className="cardContent">
+                        <div>
+                          <p className="cardText">
+                            Malu Romero sent an invoice for
+                            <a href="/"> Business A.</a>
+                          </p>
+                        </div>
+                        <span>1 hour ago</span>
+                      </div>
+                    </div>
+                    <div className="notificationList">
+                      <div>
+                        <img src={image.Rectangle} alt="" />
+                      </div>
+                      <div className="cardContent">
+                        <div>
+                          <p className="cardText">
+                            Malu Romero sent an invoice for
+                            <a href="/"> Business A.</a>
+                          </p>
+                        </div>
+                        <span>1 hour ago</span>
+                      </div>
                     </div>
                   </div>
-                  <div className="cardBody">
+                  <div className="cardFooter">
                     <div>
-                      <img src={image.Rectangle} alt="" />
-                    </div>
-                    <div className="cardContent">
-                      <div>
-                        <p className="cardText">
-                          Malu Romero sent an invoice for
-                          <a href="/"> Business A.</a>
-                        </p>
-                      </div>
-                      <span>1 hour ago</span>
-                    </div>
-                  </div>
-                  <div className="cardBody">
-                    <div>
-                      <img src={image.Rectangle} alt="" />
-                    </div>
-                    <div className="cardContent">
-                      <div>
-                        <p className="cardText">
-                          Malu Romero sent an invoice for
-                          <a href="/"> Business A.</a>
-                        </p>
-                      </div>
-                      <span>1 hour ago</span>
+                      <a href="/">view all</a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="col-5">
-              <div className="notificationWrapper">
+            <div className="col-lg-5 col-md-12">
+              <div className="notificationWrapper historyWrapper">
                 <div className="customCard">
                   <div className="cardHeader">
                     <h3 className="cardHeading">History</h3>
                   </div>
                   <div className="cardBody">
-                    <div>
-                      <img src={image.Rectangle} alt="" />
-                    </div>
-                    <div className="cardContent">
+                    <div className="notificationList">
                       <div>
-                        <p className="cardText">To Business A</p>
+                        <img src={image.Rectangle} alt="" />
                       </div>
-                      <span>Date, Year</span>
+                      <div className="cardContent">
+                        <div>
+                          <p className="cardText">To Business A</p>
+                        </div>
+                        <span>Date, Year</span>
+                      </div>
+                    </div>
+                    <div className="notificationList">
+                      <div>
+                        <img src={image.Rectangle} alt="" />
+                      </div>
+                      <div className="cardContent">
+                        <div>
+                          <p className="cardText">To Business A</p>
+                        </div>
+                        <span>Date, Year</span>
+                      </div>
+                    </div>
+                    <div className="notificationList">
+                      <div>
+                        <img src={image.Rectangle} alt="" />
+                      </div>
+                      <div className="cardContent">
+                        <div>
+                          <p className="cardText">To Business A</p>
+                        </div>
+                        <span>Date, Year</span>
+                      </div>
                     </div>
                   </div>
-                  <div className="cardBody">
+                  <div className="cardFooter">
                     <div>
-                      <img src={image.Rectangle} alt="" />
-                    </div>
-                    <div className="cardContent">
-                      <div>
-                        <p className="cardText">To Business A</p>
-                      </div>
-                      <span>Date, Year</span>
+                      <a href="/">view all</a>
                     </div>
                   </div>
-                  <div className="cardBody">
-                    <div>
-                      <img src={image.Rectangle} alt="" />
-                    </div>
-                    <div className="cardContent">
-                      <div>
-                        <p className="cardText">To Business A</p>
-                      </div>
-                      <span>Date, Year</span>
-                    </div>
-                  </div>
+                </div>
+              </div>
+              <div className="hooliWrapper">
+                <div className="heroImg">
+                  <img src={image.Lady} alt="hero" />
+                </div>
+                <div className="hooliContent">
+                  <p>Refer someone and win $500</p>
+                  <h4>
+                    HooliHQ
+                    <span>
+                      <ZigZag className="zigZag" />
+                    </span>
+                  </h4>
                 </div>
               </div>
             </div>

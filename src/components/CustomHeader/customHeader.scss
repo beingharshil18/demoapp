@@ -1,25 +1,26 @@
 @import "../../Styles/variables.scss";
-// .row {
-//   align-items: center;
-// }
-.navBar {
-  //   display: flex;
-  padding: 25px 0 22px 0;
-  //   justify-content: space-between;
+
+.headerWrapper {
+  padding: 25px 0 14px 0;
   border-bottom: 0.5px solid #dbdbdb;
+  margin: 0 0 42px 0;
+  .row {
+    align-items: center;
+  }
 }
-// .navRight {
-//   display: flex;
-//   align-items: center;
-.navLinks {
+
+.navBar {
+  display: flex;
+  align-items: center;
   .navLink {
-    // margin: 0 46px 0 0;
     font-family: $Es;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
     color: #1d191f;
+    display: flex;
+    align-items: center;
     svg {
       margin: 0 8px 0 0;
     }
@@ -41,6 +42,7 @@
       background: yellow;
       border: none;
       margin: 6px;
+      border: 1px solid #cdcdce;
     }
   }
   .btnPrimary {
@@ -50,4 +52,8 @@
     gap: 6px;
   }
 }
-// }
+.navRight {
+  .row {
+    align-items: center;
+  }
+}

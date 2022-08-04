@@ -46,7 +46,7 @@ p {
   border: 1px solid $primaryColor;
   border-radius: 20px;
   text-align: center;
-  font-family: $Es;
+  font-family: $Es-medium;
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
@@ -59,11 +59,12 @@ p {
   border: 1px solid $primaryColor;
   border-radius: 20px;
   text-align: center;
-  font-family: $Es;
+  font-family: $Es-medium;
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
   font-size: 13px;
+  color: $primaryColor;
 }
 //cards-Styling
 .customCard {
@@ -72,13 +73,13 @@ p {
   border-radius: 10px;
 }
 .cardHeading {
-  font-family: $Es;
+  font-family: $Es-bold;
   font-weight: 700;
   font-size: 15px;
   line-height: 16px;
 }
 .cardText {
-  font-family: $Abc;
+  // font-family: $Abc;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -92,15 +93,14 @@ p {
   color: #979797;
 }
 .aging {
-  font-family: $Abc;
+  // font-family: $Abc;
   font-style: normal;
   font-weight: 400;
   color: #8388ab;
 }
 
 .pricing {
-  font-family: $Es;
-  font-weight: 400;
+  font-family: $Es-medium;
   font-size: 30px;
   line-height: 34px;
   span {

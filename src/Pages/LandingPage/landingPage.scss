@@ -1,4 +1,50 @@
 @import "../../Styles/variables.scss";
+
+.userDetailWrapper {
+  display: flex;
+  align-items: center;
+  margin: 0 0 40px 0;
+  .userProfile {
+    background: #fff86d;
+    width: 69px;
+    height: 69px;
+    border-radius: 4px;
+    margin: 0 16px 0 0;
+    position: relative;
+    svg {
+      position: absolute;
+      bottom: 23px;
+      left: 12px;
+    }
+  }
+  .userDetail {
+    display: flex;
+    flex-direction: column;
+    h3 {
+      font-family: $Es-bold;
+      font-style: normal;
+
+      font-size: 20px;
+      line-height: 23px;
+    }
+    a {
+      // font-family: $Abc;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 23px;
+      color: #8388ab;
+    }
+    span {
+      // font-family: $Abc;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 23px;
+    }
+  }
+}
+
 .cardWrapper {
   padding: 0 0 28px 0;
 }
@@ -6,6 +52,7 @@
   width: 100%;
   .customCard {
     padding: 40px 40px 33px 40px;
+
     .cardHeader {
       margin: 0 0 12px 0;
       .cardHeading {
@@ -41,8 +88,11 @@
 }
 .payments {
   width: 100%;
+
   .customCard {
     padding: 23px 0 23px 35px;
+    // box-shadow: 0px 4px 45px #e3e3e3;
+    transition: 0.3s;
     .cardBody {
       .pricing {
         font-size: 25px;
@@ -53,34 +103,124 @@
         line-height: 16px;
       }
     }
+    &:hover {
+      box-shadow: 0px 4px 45px #e3e3e3;
+    }
   }
+
   .receive {
     margin: 0 0 22px 0;
   }
 }
+
 .notificationWrapper {
   .customCard {
-    padding: 30px 40px;
+    padding: 30px 40px 22px 40px;
+    position: relative;
     .cardHeader {
       padding: 0 0 20px 0;
     }
     .cardBody {
-      display: flex;
-      align-items: center;
-      margin: 0 0 20px 0;
-      div {
-        margin: 0 40px 0 0;
-        img {
-          width: 31px;
-          height: 30px;
+      margin-bottom: 50px;
+      .notificationList {
+        display: flex;
+        align-items: center;
+        margin: 0 0 13px 0;
+        position: relative;
+        // &:last-child {
+        //   margin-bottom: 50px;
+        // }
+        div {
+          margin: 0 40px 0 0;
+          img {
+            width: 31px;
+            height: 30px;
+          }
+        }
+        span {
+          font-weight: 400;
+          font-size: 13px;
+          line-height: 19px;
+          color: #979797;
         }
       }
-      span {
-        font-weight: 400;
-        font-size: 13px;
-        line-height: 19px;
-        color: #979797;
+    }
+
+    .cardFooter {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      overflow: hidden;
+      left: 0;
+      right: 0;
+      background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) -2.34%,
+        #ffffff 47.42%
+      );
+      padding: 50px 0 0px 0;
+      border-radius: 20px;
+
+      div {
+        display: flex;
+        justify-content: center;
+        // background: linear-gradient(
+        //   180deg,
+        //   rgba(255, 255, 255, 0) -2.34%,
+        //   #ffffff 47.42%
+        // );
+        border-radius: 2px;
+        padding: 16px 0 16px 0;
+        width: 100%;
       }
     }
   }
+}
+.historyWrapper {
+  margin: 0 0 33px 0;
+}
+.hooliWrapper {
+  background: #edd0c1;
+  border-radius: 4px;
+  width: 100%;
+  display: flex;
+  position: relative;
+  .heroImg {
+    position: absolute;
+    bottom: 0;
+    left: 22px;
+  }
+  img {
+    width: 150px;
+  }
+}
+.hooliContent {
+  padding: 14px 0 21px 189px;
+  position: relative;
+  p {
+    font-family: $Es;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 16px;
+  }
+  h4 {
+    font-family: $Es;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 35px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  span {
+    position: absolute;
+    bottom: -18px;
+  }
+  // .zigZag {
+  //   position: absolute;
+  //   bottom: 7px;
+  //   right: 77px;
+  // }
 }
