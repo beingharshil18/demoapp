@@ -1,0 +1,100 @@
+@import "../../Styles/variables.scss";
+
+.clientWrapper {
+  .wallBanner {
+    position: relative;
+    margin: 0px 0 50px 0;
+    img {
+      width: 100%;
+    }
+    .userProfile {
+      position: absolute;
+      border: 5px solid #fff;
+      bottom: -36px;
+      left: 22px;
+
+      .profilePhoto {
+        background: #fff86d;
+        width: 69px;
+        height: 69px;
+        border-radius: 4px;
+        // margin: 0 16px 0 0;
+        position: relative;
+        // margin-bottom: 50px;
+        svg {
+          position: absolute;
+          bottom: 23px;
+          left: 12px;
+        }
+      }
+    }
+  }
+  .userDetailWrapper {
+    padding: 0 0 38px 0;
+    margin: 0 0 32px 0;
+    border-bottom: 0.5px solid #dbdbdb;
+    .userDetail {
+      display: flex;
+      flex-direction: column;
+      margin: 0 0 0 30px;
+      h3 {
+        font-family: $Es-bold;
+        font-style: normal;
+        font-size: 20px;
+        line-height: 23px;
+      }
+      a {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 23px;
+        color: #8388ab;
+      }
+      span {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 23px;
+      }
+    }
+  }
+
+  .customCard {
+    padding: 30px 25px 25px 32px;
+    .cardHeader {
+      padding: 0 0 13px 0;
+      margin: 0 0 20px 0;
+      border-bottom: 0.5px solid #dbdbdb;
+    }
+    .cardBody {
+      border: 0.5px solid #dbdbdb;
+      border-radius: 2px;
+      padding: 8px 34px 8px 17px;
+      margin: 0 0 20px 0;
+      p {
+        font-size: 15px;
+        line-height: 20px;
+      }
+    }
+    .cardFooter {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      .btnSecondary {
+        border: none;
+        border-radius: 0;
+        color: red;
+        padding: 5px 15px 7px 12px;
+      }
+      .btnPrimary {
+        padding: 5px 15px 7px 12px;
+        margin: 0 0 0 28px;
+      }
+    }
+  }
+}
+// .adBanner {
+//   img {
+//     width: 100%;
+//   }
+// }
