@@ -10,6 +10,7 @@ import { ReactComponent as NavBtn } from "../../Assets/Images/navbtn.svg";
 import "../../Styles/variables.scss";
 import "../../Styles/app.scss";
 import "../CustomHeader/customHeader.scss";
+import { Link } from "react-router-dom";
 
 export default function CustomHeader() {
   return (
@@ -27,12 +28,12 @@ export default function CustomHeader() {
                 <div className="row">
                   <div className="col-6">
                     <div className="navBar">
-                      <a href="/" className="navLink home">
+                      <Link to="/" className="navLink home">
                         <HomeIcon className="homeBtn" /> Homepage
-                      </a>
-                      <a href="/" className="navLink">
+                      </Link>
+                      <Link to="/clientpage" className="navLink">
                         <PeopleIcon /> Client List
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   <div className="col-1">

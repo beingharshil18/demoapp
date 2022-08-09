@@ -178,6 +178,11 @@
 }
 .historyWrapper {
   margin: 0 0 33px 0;
+  .customCard {
+    .cardBody {
+      margin-bottom: 37px;
+    }
+  }
 }
 .hooliWrapper {
   background: #edd0c1;

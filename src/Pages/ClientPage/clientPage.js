@@ -34,7 +34,7 @@ export default function clientPage() {
             </div>
           </div>
           <div className="row">
-            <div className="col-8">
+            <div className="col-7">
               <div className="customCard">
                 <div className="cardHeader">
                   <h4 className="cardHeading">About</h4>
@@ -54,10 +54,15 @@ export default function clientPage() {
               </div>
             </div>
 
-            <div className="col-4">
-              {/* <div className="adBanner"> */}
-              <img src={image.AdBanner} alt="" />
-              {/* </div> */}
+            <div className="col-5">
+              <div className="addBanner">
+                <div className="bannerVector">
+                  <img src={image.BannerVector} alt="" />
+                </div>
+                <div className="bannerHero">
+                  <img src={image.HeroBanner} alt="" />
+                </div>
+              </div>
             </div>
           </div>
         </div>
