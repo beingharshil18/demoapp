@@ -6,12 +6,18 @@
   margin: 0 0 42px 0;
   .row {
     align-items: center;
+    .logo {
+      svg {
+        cursor: pointer;
+      }
+    }
   }
 }
 
 .navBar {
   display: flex;
   align-items: center;
+
   .navLink {
     font-family: $Es;
     font-style: normal;

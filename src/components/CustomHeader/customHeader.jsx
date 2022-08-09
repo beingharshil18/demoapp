@@ -38,9 +38,9 @@ export default function CustomHeader() {
                   </div>
                   <div className="col-1">
                     <div className="navIcon">
-                      <a href="/">
+                      <Link to="/example">
                         <BellIcon />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   <div className="col-5">
