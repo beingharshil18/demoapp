@@ -1,12 +1,15 @@
 import React from "react";
 import "../../Styles/variables.scss";
 import "../../Styles/app.scss";
+import "../NotificationList/notificationList.scss";
 
 export default function notificationList({ photo, cardtext, cardlink, time }) {
   return (
     <>
       <div className="notificationList">
-        <div>{photo}</div>
+        <div>
+          <img src={photo} alt="" />
+        </div>
         <div className="cardContent">
           <div>
             <p className="cardText">

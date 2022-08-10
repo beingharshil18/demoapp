@@ -127,26 +127,26 @@
     }
     .cardBody {
       margin-bottom: 50px;
-      .notificationList {
-        display: flex;
-        align-items: center;
-        margin: 0 0 13px 0;
-        position: relative;
+      // .notificationList {
+      //   display: flex;
+      //   align-items: center;
+      //   margin: 0 0 13px 0;
+      //   position: relative;
 
-        div {
-          margin: 0 40px 0 0;
-          img {
-            width: 31px;
-            height: 30px;
-          }
-        }
-        span {
-          font-weight: 400;
-          font-size: 13px;
-          line-height: 19px;
-          color: #979797;
-        }
-      }
+      //   div {
+      //     margin: 0 40px 0 0;
+      //     img {
+      //       width: 31px;
+      //       height: 30px;
+      //     }
+      //   }
+      //   span {
+      //     font-weight: 400;
+      //     font-size: 13px;
+      //     line-height: 19px;
+      //     color: #979797;
+      //   }
+      // }
     }
 
     .cardFooter {

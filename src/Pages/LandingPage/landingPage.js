@@ -2,6 +2,7 @@ import React from "react";
 import "../../Styles/variables.scss";
 import "../../Styles/app.scss";
 import "../LandingPage/landingPage.scss";
+import NotificationList from "../../components/NotificationList/notificationList";
 import CustomHeader from "../../components/CustomHeader/customHeader";
 import { ReactComponent as LargeUnionIcon } from "../../Assets/Images/largeUnion.svg";
 import { ReactComponent as ZigZag } from "../../Assets/Images/zigzag.svg";
@@ -88,76 +89,36 @@ export default function LandingPage() {
                     <h3 className="cardHeading">Notifications</h3>
                   </div>
                   <div className="cardBody">
-                    <div className="notificationList">
-                      <div>
-                        <img src={image.Rectangle} alt="" />
-                      </div>
-                      <div className="cardContent">
-                        <div>
-                          <p className="cardText">
-                            Malu Romero sent an invoice for{" "}
-                            <a href="/"> Business A.</a>
-                          </p>
-                        </div>
-                        <span>1 hour ago</span>
-                      </div>
-                    </div>
-                    <div className="notificationList">
-                      <div>
-                        <img src={image.Rectangle} alt="" />
-                      </div>
-                      <div className="cardContent">
-                        <div>
-                          <p className="cardText">
-                            Malu Romero sent an invoice for{" "}
-                            <a href="/"> Business A.</a>
-                          </p>
-                        </div>
-                        <span>1 hour ago</span>
-                      </div>
-                    </div>
-                    <div className="notificationList">
-                      <div>
-                        <img src={image.Rectangle} alt="" />
-                      </div>
-                      <div className="cardContent">
-                        <div>
-                          <p className="cardText">
-                            Malu Romero sent an invoice for{" "}
-                            <a href="/"> Business A.</a>
-                          </p>
-                        </div>
-                        <span>1 hour ago</span>
-                      </div>
-                    </div>
-                    <div className="notificationList">
-                      <div>
-                        <img src={image.Rectangle} alt="" />
-                      </div>
-                      <div className="cardContent">
-                        <div>
-                          <p className="cardText">
-                            Malu Romero sent an invoice for
-                            <a href="/"> Business A.</a>
-                          </p>
-                        </div>
-                        <span>1 hour ago</span>
-                      </div>
-                    </div>
-                    <div className="notificationList">
-                      <div>
-                        <img src={image.Rectangle} alt="" />
-                      </div>
-                      <div className="cardContent">
-                        <div>
-                          <p className="cardText">
-                            Malu Romero sent an invoice for
-                            <a href="/"> Business A.</a>
-                          </p>
-                        </div>
-                        <span>1 hour ago</span>
-                      </div>
-                    </div>
+                    <NotificationList
+                      photo={image.Rectangle}
+                      cardtext={"Malu Romero sent an invoice for"}
+                      cardlink={" Business A."}
+                      time={"1 hour ago"}
+                    />
+                    <NotificationList
+                      photo={image.Rectangle}
+                      cardtext={"Malu Romero sent an invoice for"}
+                      cardlink={" Business A."}
+                      time={"1 hour ago"}
+                    />
+                    <NotificationList
+                      photo={image.Rectangle}
+                      cardtext={"Malu Romero sent an invoice for"}
+                      cardlink={" Business A."}
+                      time={"1 hour ago"}
+                    />
+                    <NotificationList
+                      photo={image.Rectangle}
+                      cardtext={"Malu Romero sent an invoice for"}
+                      cardlink={" Business A."}
+                      time={"1 hour ago"}
+                    />
+                    <NotificationList
+                      photo={image.Rectangle}
+                      cardtext={"Malu Romero sent an invoice for"}
+                      cardlink={" Business A."}
+                      time={"1 hour ago"}
+                    />
                   </div>
                   <div className="cardFooter">
                     <div>
@@ -174,39 +135,21 @@ export default function LandingPage() {
                     <h3 className="cardHeading">History</h3>
                   </div>
                   <div className="cardBody">
-                    <div className="notificationList">
-                      <div>
-                        <img src={image.Rectangle} alt="" />
-                      </div>
-                      <div className="cardContent">
-                        <div>
-                          <p className="cardText">To Business A</p>
-                        </div>
-                        <span>Date, Year</span>
-                      </div>
-                    </div>
-                    <div className="notificationList">
-                      <div>
-                        <img src={image.Rectangle} alt="" />
-                      </div>
-                      <div className="cardContent">
-                        <div>
-                          <p className="cardText">To Business A</p>
-                        </div>
-                        <span>Date, Year</span>
-                      </div>
-                    </div>
-                    <div className="notificationList">
-                      <div>
-                        <img src={image.Rectangle} alt="" />
-                      </div>
-                      <div className="cardContent">
-                        <div>
-                          <p className="cardText">To Business A</p>
-                        </div>
-                        <span>Date, Year</span>
-                      </div>
-                    </div>
+                    <NotificationList
+                      photo={image.Rectangle}
+                      cardtext={"To Business A"}
+                      time={"1 hour ago"}
+                    />
+                    <NotificationList
+                      photo={image.Rectangle}
+                      cardtext={"To Business A"}
+                      time={"1 hour ago"}
+                    />
+                    <NotificationList
+                      photo={image.Rectangle}
+                      cardtext={"To Business A"}
+                      time={"1 hour ago"}
+                    />
                   </div>
                   <div className="cardFooter">
                     <div>
