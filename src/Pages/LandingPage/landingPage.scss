@@ -5,17 +5,17 @@
   align-items: center;
   margin: 0 0 40px 0;
   .userProfile {
-    background: #fff86d;
-    width: 69px;
-    height: 69px;
-    border-radius: 4px;
+    // background: #fff86d;
+    // width: 69px;
+    // height: 69px;
+    // border-radius: 4px;
     margin: 0 16px 0 0;
     position: relative;
-    svg {
-      position: absolute;
-      bottom: 23px;
-      left: 12px;
-    }
+    // svg {
+    //   position: absolute;
+    //   bottom: 23px;
+    //   left: 12px;
+    // }
   }
   .userDetail {
     display: flex;
@@ -94,7 +94,7 @@
   .customCard {
     padding: 23px 0 23px 35px;
     // box-shadow: 0px 4px 45px #e3e3e3;
-    transition: 0.3s;
+    transition: 0.5s;
     .cardBody {
       .pricing {
         font-size: 25px;

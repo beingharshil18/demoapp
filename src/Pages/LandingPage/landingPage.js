@@ -4,7 +4,9 @@ import "../../Styles/app.scss";
 import "../LandingPage/landingPage.scss";
 import NotificationList from "../../components/NotificationList/notificationList";
 import CustomHeader from "../../components/CustomHeader/customHeader";
-import { ReactComponent as LargeUnionIcon } from "../../Assets/Images/largeUnion.svg";
+import ToastMsg from "../../components/ToastMsg/toast";
+// import { ReactComponent as LargeUnionIcon } from "../../Assets/Images/largeUnion.svg";
+import { ReactComponent as UnionLogo } from "../../Assets/Images/YellowLogo.svg";
 import { ReactComponent as ZigZag } from "../../Assets/Images/zigzag.svg";
 import { image } from "../../Styles/image";
 
@@ -12,13 +14,15 @@ export default function LandingPage() {
   return (
     <>
       <CustomHeader />
+      <ToastMsg />
       <div className="wrapper">
         <div className="container">
           <div className="row">
             <div className="col-12">
               <div className="userDetailWrapper">
                 <div className="userProfile">
-                  <LargeUnionIcon />
+                  {/* <LargeUnionIcon /> */}
+                  <UnionLogo />
                 </div>
                 <div className="userDetail">
                   <h3>Hooli HQ</h3>
