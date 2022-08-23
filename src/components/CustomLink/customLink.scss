@@ -1,0 +1,15 @@
+@import "../../Styles/variables.scss";
+
+.customLink {
+  display: flex;
+  justify-content: center;
+  border-radius: 2px;
+  padding: 16px 0 16px 0;
+  width: 100%;
+
+  a {
+    font-family: $Es-bold;
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
