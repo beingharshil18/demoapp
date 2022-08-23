@@ -19,9 +19,7 @@
         width: 69px;
         height: 69px;
         border-radius: 4px;
-        // margin: 0 16px 0 0;
         position: relative;
-        // margin-bottom: 50px;
         svg {
           position: absolute;
           bottom: 23px;
@@ -34,30 +32,6 @@
     padding: 0 0 38px 0;
     margin: 0 0 32px 0;
     border-bottom: 0.5px solid #dbdbdb;
-    .userDetail {
-      display: flex;
-      flex-direction: column;
-      margin: 0 0 0 30px;
-      h3 {
-        font-family: $Es-bold;
-        font-style: normal;
-        font-size: 20px;
-        line-height: 23px;
-      }
-      a {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 23px;
-        color: #8388ab;
-      }
-      span {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 23px;
-      }
-    }
   }
 
   .customCard {

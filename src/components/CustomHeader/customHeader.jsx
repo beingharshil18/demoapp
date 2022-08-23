@@ -1,4 +1,5 @@
 import React from "react";
+import PrimaryButton from "../../components/PrimaryButton/primaryButton";
 
 import { ReactComponent as Logo } from "../../Assets/Images/logo.svg";
 import { ReactComponent as HomeIcon } from "../../Assets/Images/HomeIcon.svg";
@@ -17,49 +18,35 @@ export default function CustomHeader() {
     <header>
       <div className="container">
         <div className="headerWrapper">
-          <div className="row">
-            <div className="col-xl-6 col-md-4">
-              <div className="logo">
-                <Logo />
-              </div>
-            </div>
-            <div className="col-xl-6 col-md-8">
-              <div className="navRight">
-                <div className="row">
-                  <div className="col-6">
-                    <div className="navBar">
-                      <Link to="/" className="navLink home">
-                        <HomeIcon className="homeBtn" /> Homepage
-                      </Link>
-                      <Link to="/clientpage" className="navLink">
-                        <PeopleIcon /> Client List
-                      </Link>
-                    </div>
-                  </div>
-                  <div className="col-1">
-                    <div className="navIcon">
-                      <Link to="/example">
-                        <BellIcon />
-                      </Link>
-                    </div>
-                  </div>
-                  <div className="col-5">
-                    <div className="navBtn">
-                      <div className="profileDrpDown">
-                        <button className="profileBtn">
-                          <UnionIcon />
-                        </button>
-                        <DropIcon />
-                      </div>
+          <div className="logo">
+            <Logo />
+          </div>
 
-                      <button className="btnPrimary">
-                        <span>Send Invoice</span>
-                        <NavBtn />
-                      </button>
-                    </div>
-                  </div>
-                </div>
+          <div className="headerRight">
+            <div className="navBar">
+              <Link to="/" className="navLink home">
+                <HomeIcon className="homeBtn" /> Homepage
+              </Link>
+              <Link to="/clientpage" className="navLink">
+                <PeopleIcon /> Client List
+              </Link>
+            </div>
+
+            <div className="navIcon">
+              <Link to="/example">
+                <BellIcon />
+              </Link>
+            </div>
+
+            <div className="navBtn">
+              <div className="profileDrpDown">
+                <button className="profileBtn">
+                  <UnionIcon />
+                </button>
+                <DropIcon />
               </div>
+
+              <PrimaryButton btn="Send Invoice " icon={<NavBtn />} />
             </div>
           </div>
         </div>

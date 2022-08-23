@@ -20,6 +20,17 @@ a {
 .container {
   max-width: 1196px;
   margin: 0 auto;
+
+  @include xxl {
+    max-width: 991px;
+  }
+  @include mmd {
+    max-width: 800px;
+    padding: 0 20px 0 20px;
+  }
+  @include md {
+    padding: 0 20px 0 20px;
+  }
 }
 .h1,
 .h2,
@@ -40,41 +51,6 @@ p {
   line-height: 0;
 }
 
-//Button
-.btnPrimary {
-  background: $primaryColor;
-  border: 1px solid $primaryColor;
-  border-radius: 20px;
-  text-align: center;
-  font-family: $Es-medium;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 20px;
-  color: #ffffff;
-  &:hover {
-    color: black;
-    transition: 0.5s;
-  }
-}
-
-.btnSecondary {
-  background: transparent;
-  border: 1px solid $primaryColor;
-  border-radius: 20px;
-  text-align: center;
-  font-family: $Es-medium;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px;
-  font-size: 13px;
-  color: $primaryColor;
-  &:hover {
-    color: black;
-    border: 1px solid black;
-    transition: 0.5s;
-  }
-}
 //cards-Styling
 .customCard {
   background: #ffffff;

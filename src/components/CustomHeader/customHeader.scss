@@ -4,62 +4,71 @@
   padding: 25px 0 14px 0;
   border-bottom: 0.5px solid #dbdbdb;
   margin: 0 0 42px 0;
-  .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo {
+    svg {
+      cursor: pointer;
+    }
+  }
+}
+
+.headerRight {
+  display: flex;
+  align-items: center;
+  .navBar {
+    display: flex;
     align-items: center;
-    .logo {
+
+    .navLink {
+      font-family: $Es;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      color: #1d191f;
+      display: flex;
+      align-items: center;
       svg {
-        cursor: pointer;
+        margin: 0 8px 0 0;
       }
     }
-  }
-}
-
-.navBar {
-  display: flex;
-  align-items: center;
-
-  .navLink {
-    font-family: $Es;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-    color: #1d191f;
-    display: flex;
-    align-items: center;
-    svg {
-      margin: 0 8px 0 0;
+    .home {
+      margin: 0 42px 0 0;
+    }
+    @include md {
+      display: none;
     }
   }
-  .home {
-    margin: 0 42px 0 0;
+  .navIcon {
+    margin: 0 0 0 45px;
+  }
+
+  .navBtn {
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 45px;
+    .profileDrpDown {
+      margin: 0 36px 0 10px;
+      .profileBtn {
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        background: yellow;
+        border: none;
+        margin: 6px;
+        border: 1px solid #cdcdce;
+      }
+    }
+    .btnPrimary {
+      padding: 5px 18px 6px 18px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
   }
 }
 
-.navBtn {
-  display: flex;
-  align-items: center;
-  .profileDrpDown {
-    margin: 0 36px 0 10px;
-    .profileBtn {
-      width: 28px;
-      height: 28px;
-      border-radius: 50%;
-      background: yellow;
-      border: none;
-      margin: 6px;
-      border: 1px solid #cdcdce;
-    }
-  }
-  .btnPrimary {
-    padding: 5px 18px 6px 18px;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-  }
-}
-.navRight {
-  .row {
-    align-items: center;
-  }
-}
+// }

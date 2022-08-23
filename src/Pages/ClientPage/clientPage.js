@@ -1,5 +1,6 @@
 import React from "react";
 import CustomHeader from "../../components/CustomHeader/customHeader";
+import UserDetails from "../../components/UserDetails/userDetail";
 import "../ClientPage/clientPage.scss";
 import "../../Styles/variables.scss";
 import "../../Styles/app.scss";
@@ -23,13 +24,19 @@ export default function clientPage() {
                 </div>
               </div>
               <div className="userDetailWrapper">
-                <div className="userDetail">
+                <UserDetails
+                  username="Hooli HQ"
+                  address="@hooliheadquarters"
+                  company="Tech Company • NYC "
+                  website="Visit Website"
+                />
+                {/* <div className="userDetail">
                   <h3>Hooli HQ</h3>
                   <a href="../../components/CustomHeader/customHeader">
                     @hooliheadquarters
                   </a>
                   <span>Tech Company • NYC </span>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
