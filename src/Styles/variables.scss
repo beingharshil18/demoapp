@@ -1,31 +1,91 @@
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+@font-face {
+  font-family: ABC-Whyte-Regular;
+  src: url(../Assets/fonts/ABCWhyte-Regular.woff);
+}
+@font-face {
+  font-family: ABC-Whyte-Black;
+  src: url(../Assets/fonts/ABCWhyte-Black.woff);
+}
+@font-face {
+  font-family: ABC-Whyte-Book;
+  src: url(../Assets/fonts/ABCWhyte-Book.woff);
 }
 
-body {
-  font-family: $primaryFont;
+@font-face {
+  font-family: ES Rebond Grotesque-Regular;
+  src: url(../Assets/fonts/ESRebondGrotesque-Regular.woff);
+}
+@font-face {
+  font-family: ES Rebond Grotesque-Bold;
+  src: url(../Assets/fonts/ESRebondGrotesque-Bold.woff);
+}
+@font-face {
+  font-family: ES Rebond Grotesque-Medium;
+  src: url(../Assets/fonts/ESRebondGrotesque-Medium.woff);
 }
 
 // fonts
-$primaryFont: "ABC Whyte";
-$secondaryFont: "ES Rebond Grotesque";
-$subText: "Euclid Circular A";
+$Abc: ABC-Whyte-Regular;
+$Abc-black: ABC-Whyte-Black;
+$Abc-book: ABC-Whyte-Book;
+
+$Es: ES Rebond Grotesque-Regular;
+$Es-medium: ES Rebond Grotesque-Medium;
+$Es-bold: ES Rebond Grotesque-Bold;
 
 //colors
 $primaryColor: #005fda;
 $secondaryColor: #8388ab;
 
 //mediaQuery
+// $LaptopL: "only screen and (max-width : 1366px)";
+// $Laptop: "only screen and (max-width : 1199px)";
+// $Ipad: "only screen and (max-width : 1024px)";
+// $IpadS: "only screen and (max-width: 991px)";
+// $PhoneL: "only screen and (max-width: 768px)";
+// $PhoneS: "only screen and (max-width: 575px)";
 
-$LaptopL: "only screen and (max-width : 1366px)";
-$Laptop: "only screen and (max-width : 1199px)";
-$Ipad: "only screen and (max-width : 1024px)";
-$IpadS: "only screen and (max-width: 991px)";
-$PhoneL: "only screen and (max-width: 768px)";
-$PhoneS: "only screen and (max-width: 575px)";
+$breakpoints: (
+  "sm": 576px,
+  "md": 768px,
+  "mmd": 991px,
+  "lg": 1024px,
+  "xl": 1199px,
+  "xxl": 1439px,
+);
+
+@mixin sm {
+  @media (max-width: map-get($breakpoints, "sm")) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (max-width: map-get($breakpoints, "md")) {
+    @content;
+  }
+}
+
+@mixin mmd {
+  @media (max-width: map-get($breakpoints, "mmd")) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (max-width: map-get($breakpoints, "lg")) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (max-width: map-get($breakpoints, "xl")) {
+    @content;
+  }
+}
+
+@mixin xxl {
+  @media (max-width: map-get($breakpoints, "xxl")) {
+    @content;
+  }
+}

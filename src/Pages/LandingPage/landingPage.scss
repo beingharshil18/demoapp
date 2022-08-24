@@ -1,0 +1,153 @@
+@import "../../Styles/variables.scss";
+
+.userDetailWrapper {
+  display: flex;
+  align-items: center;
+  margin: 0 0 40px 0;
+  .userProfile {
+    margin: 0 16px 0 0;
+    position: relative;
+  }
+}
+
+.cardWrapper {
+  padding: 0 0 28px 0;
+}
+.balance {
+  width: 100%;
+  .customCard {
+    padding: 40px 40px 33px 40px;
+    &:hover {
+      box-shadow: 0px 4px 45px #e3e3e3;
+    }
+    .cardHeader {
+      margin: 0 0 12px 0;
+      .cardHeading {
+        color: #1d1d1b;
+      }
+    }
+    .cardBody {
+      padding: 0 0 20px 0;
+      margin: 0 0 24px 0;
+      border-bottom: 0.5px solid #cdcdce;
+      .pricing {
+        margin: 0 0 16px 0;
+
+        span {
+          color: #00c39e;
+        }
+      }
+      .aging {
+        font-size: 15px;
+        line-height: 22px;
+      }
+    }
+    .cardFooter {
+      .btnPrimary {
+        padding: 5px 17px;
+        margin: 0 13px 0 0;
+      }
+      .btnSecondary {
+        padding: 5px 24px;
+      }
+    }
+    @include md {
+      margin-bottom: 30px;
+    }
+  }
+}
+.payments {
+  width: 100%;
+}
+
+.notificationWrapper {
+  .customCard {
+    padding: 30px 40px 22px 40px;
+    position: relative;
+    &:hover {
+      box-shadow: 0px 4px 45px #e3e3e3;
+    }
+    .cardHeader {
+      padding: 0 0 20px 0;
+    }
+    .cardBody {
+      margin-bottom: 50px;
+    }
+    .notificationCardBody {
+      height: 252px;
+      overflow: scroll;
+    }
+
+    .cardFooter {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      overflow: hidden;
+      left: 0;
+      right: 0;
+      background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) -2.34%,
+        #ffffff 47.42%
+      );
+      padding: 50px 0 0px 0;
+      border-radius: 20px;
+    }
+  }
+  @include mmd {
+    margin-bottom: 30px;
+  }
+}
+.historyWrapper {
+  margin: 0 0 33px 0;
+  .customCard {
+    .cardBody {
+      margin-bottom: 37px;
+    }
+    .historyCardBody {
+      height: 150px;
+      overflow: scroll;
+      padding: 0 20px 0 0;
+    }
+  }
+}
+.hooliWrapper {
+  background: #edd0c1;
+  border-radius: 4px;
+  width: 100%;
+  display: flex;
+  position: relative;
+  .heroImg {
+    position: absolute;
+    bottom: 0;
+    left: 22px;
+  }
+  img {
+    width: 150px;
+  }
+}
+.hooliContent {
+  padding: 14px 0 21px 189px;
+  position: relative;
+  p {
+    font-family: $Es;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 16px;
+  }
+  h4 {
+    font-family: $Es;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 35px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  span {
+    position: absolute;
+    bottom: -18px;
+  }
+}

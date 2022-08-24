@@ -1,0 +1,18 @@
+@import "../../Styles/variables.scss";
+
+.toastMsg {
+  width: 100%;
+  background-color: #cbe9d9;
+  padding: 20px 0 20px 0;
+  margin-bottom: 35px;
+  border-radius: 4px;
+  .msg {
+    font-size: 16px;
+    line-height: 23px;
+    text-align: center;
+    padding: 0 20px 0 20px;
+    span {
+      font-family: $Abc-black;
+    }
+  }
+}

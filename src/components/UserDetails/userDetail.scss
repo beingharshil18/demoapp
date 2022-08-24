@@ -1,0 +1,29 @@
+@import "../../Styles/variables.scss";
+
+.userDetail {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  h3 {
+    font-family: $Es-bold;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+  }
+  a {
+    font-size: 16px;
+    line-height: 23px;
+    color: #8388ab;
+  }
+  span {
+    font-size: 16px;
+    line-height: 23px;
+  }
+  .webLink {
+    color: $primaryColor;
+  }
+}

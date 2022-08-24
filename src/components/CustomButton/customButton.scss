@@ -1,0 +1,31 @@
+@import "../../Styles/variables.scss";
+
+.btn {
+  border: 1px solid $primaryColor;
+  border-radius: 20px;
+  text-align: center;
+  font-family: $Es-medium;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.btnPrimary {
+  background: $primaryColor;
+  color: #ffffff;
+  &:hover {
+    color: black;
+    transition: 0.5s;
+  }
+}
+
+.btnSecondary {
+  background: transparent;
+  color: $primaryColor;
+  &:hover {
+    color: black;
+    border: 1px solid black;
+    transition: 0.5s;
+  }
+}

@@ -1,0 +1,96 @@
+@import "../../Styles/variables.scss";
+
+.clientWrapper {
+  padding: 0 0 500px 0;
+  .wallBanner {
+    position: relative;
+    margin: 0px 0 50px 0;
+    img {
+      width: 100%;
+    }
+    .userProfile {
+      position: absolute;
+      border: 5px solid #fff;
+      bottom: -36px;
+      left: 22px;
+
+      .profilePhoto {
+        background: #fff86d;
+        width: 69px;
+        height: 69px;
+        border-radius: 4px;
+        position: relative;
+        svg {
+          position: absolute;
+          bottom: 23px;
+          left: 12px;
+        }
+      }
+    }
+  }
+  .userDetailWrapper {
+    padding: 0 0 38px 0;
+    margin: 0 0 32px 0;
+    border-bottom: 0.5px solid #dbdbdb;
+  }
+
+  .customCard {
+    padding: 30px 25px 25px 32px;
+    .cardHeader {
+      padding: 0 0 13px 0;
+      margin: 0 0 20px 0;
+      border-bottom: 0.5px solid #dbdbdb;
+    }
+    .cardBody {
+      border: 0.5px solid #dbdbdb;
+      border-radius: 2px;
+      padding: 8px 34px 8px 17px;
+      margin: 0 0 20px 0;
+      p {
+        font-size: 15px;
+        line-height: 20px;
+      }
+    }
+    .cardFooter {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      .btnSecondary {
+        border: none;
+        border-radius: 0;
+        color: red;
+        padding: 5px 15px 7px 12px;
+      }
+      .btnPrimary {
+        padding: 5px 15px 7px 12px;
+        margin: 0 0 0 28px;
+      }
+    }
+  }
+}
+.addBanner {
+  background: #c3ead8;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  .bannerVector {
+    img {
+      width: 236px;
+      object-fit: cover;
+      position: absolute;
+      left: 36px;
+      bottom: 30px;
+    }
+  }
+  .bannerHero {
+    img {
+      width: 210px;
+      object-fit: cover;
+      position: absolute;
+      right: 22px;
+      bottom: 6px;
+    }
+  }
+}

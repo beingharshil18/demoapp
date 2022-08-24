@@ -1,0 +1,45 @@
+@import "../../Styles/variables.scss";
+
+.notificationList {
+  display: flex;
+  align-items: center;
+  margin: 0 0 13px 0;
+  // position: relative;
+
+  .profilePhoto {
+    margin: 0 40px 0 0;
+    // width: 31px;
+    // height: 30px;
+    // max-width: 100%;
+    img {
+      width: 31px;
+      height: 30px;
+    }
+  }
+  .cardContent {
+    width: 100%;
+  }
+  .batchClass {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .notificationMsg {
+    span {
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 19px;
+      color: #979797;
+    }
+  }
+
+  .revenue {
+    background: #ffdbdb;
+    border-radius: 4px;
+    border: none;
+    color: #eb5757;
+    font-size: 15px;
+    line-height: 16px;
+    padding: 6px;
+  }
+}
