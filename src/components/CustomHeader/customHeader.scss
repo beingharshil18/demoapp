@@ -44,24 +44,39 @@
   }
   .navIcon {
     margin: 0 0 0 45px;
+    @include sm {
+      display: none;
+    }
   }
 
   .navBtn {
     display: flex;
     align-items: center;
     margin: 0 0 0 45px;
-    .profileDrpDown {
+    .drpdownWrapper {
+      display: flex;
+      align-items: center;
       margin: 0 36px 0 10px;
-      .profileBtn {
-        width: 28px;
-        height: 28px;
-        border-radius: 50%;
-        background: yellow;
-        border: none;
-        margin: 6px;
+      cursor: pointer;
+
+      .profileDrpDown {
+        margin: 0 6px 0 0;
+        padding: 2px;
         border: 1px solid #cdcdce;
+        border-radius: 100%;
+
+        .profileBtn {
+          width: 28px;
+          height: 28px;
+          border-radius: 50%;
+          background: yellow;
+          border: none;
+          // margin: 6px;
+          // border: 1px solid #cdcdce;
+        }
       }
     }
+
     .btnPrimary {
       padding: 5px 18px 6px 18px;
       display: flex;

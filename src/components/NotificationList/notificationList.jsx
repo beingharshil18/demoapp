@@ -5,6 +5,7 @@ import "../NotificationList/notificationList.scss";
 
 export default function notificationList({
   photo,
+  batchClass,
   cardtext,
   cardlink,
   revenue,
@@ -15,7 +16,7 @@ export default function notificationList({
       <div className="profilePhoto">
         <img src={photo} alt="" />
       </div>
-      <div className="cardContent">
+      <div className={`cardContent ${batchClass}`}>
         <div className="notificationMsg">
           <p className="cardText">
             {cardtext} <a href="/"> {cardlink}</a>

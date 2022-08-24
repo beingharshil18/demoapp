@@ -1,12 +1,25 @@
 @import "../../Styles/variables.scss";
 
-.cardBody {
-  .pricing {
-    font-size: 25px;
-    line-height: 35px;
+.paymentCardWrapper {
+  .customCard {
+    padding: 23px 0 23px 35px !important;
+    transition: 0.5s;
+    .cardBody {
+      .pricing {
+        font-size: 25px;
+        line-height: 35px;
+      }
+      .aging {
+        font-size: 12px;
+        line-height: 16px;
+      }
+    }
+
+    &:hover {
+      box-shadow: 0px 4px 45px #e3e3e3;
+    }
   }
-  .aging {
-    font-size: 12px;
-    line-height: 16px;
+  .paymentCard {
+    margin: 0 0 22px 0;
   }
 }

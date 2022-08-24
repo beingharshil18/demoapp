@@ -8,8 +8,7 @@ import ToastMsg from "../../components/ToastMsg/toast";
 import UserDetails from "../../components/UserDetails/userDetail";
 import PaymentCard from "../../components/PaymentCard/paymentCard";
 import CustomLink from "../../components/CustomLink/customLink";
-import PrimaryButton from "../../components/PrimaryButton/primaryButton";
-import SecondaryButton from "../../components/SecondaryButton/secondaryButton";
+import CustomButton from "../../components/CustomButton/customButton";
 import { ReactComponent as UnionLogo } from "../../Assets/Images/YellowLogo.svg";
 import { ReactComponent as ZigZag } from "../../Assets/Images/zigzag.svg";
 import { image } from "../../Styles/image";
@@ -49,29 +48,28 @@ export default function LandingPage() {
                     <p className="aging">Aging: $9,000</p>
                   </div>
                   <div className="cardFooter">
-                    <PrimaryButton btn="Add Funds" />
-                    <SecondaryButton btn="Withdraw Funds" />
+                    <CustomButton btnClass="btnPrimary" btnLabel="Add Funds" />
+                    <CustomButton
+                      btnClass="btnSecondary"
+                      btnLabel="Withdraw Funds"
+                    />
                   </div>
                 </div>
               </div>
             </div>
             <div className="col-lg-5 col-md-5  col-xs-12">
               <div className="payments">
-                <div className="customCard receive">
-                  <PaymentCard
-                    heading="Receivable (AR)"
-                    price="10,835.55"
-                    aging="$9,000"
-                  />
-                </div>
-
-                <div className="customCard payable">
-                  <PaymentCard
-                    heading="Payable (AP)"
-                    price="10,835.55"
-                    aging="$9,000"
-                  />
-                </div>
+                <PaymentCard
+                  paymentCard="paymentCard"
+                  heading="Receivable (AR)"
+                  price="10,835.55"
+                  aging="$9,000"
+                />
+                <PaymentCard
+                  heading="Payable (AP)"
+                  price="10,835.55"
+                  aging="$9,000"
+                />
               </div>
             </div>
           </div>
@@ -83,7 +81,25 @@ export default function LandingPage() {
                   <div className="cardHeader">
                     <h3 className="cardHeading">Notifications</h3>
                   </div>
-                  <div className="cardBody">
+                  <div className="cardBody notificationCardBody">
+                    <NotificationList
+                      photo={image.Rectangle}
+                      cardtext={"Malu Romero sent an invoice for"}
+                      cardlink={" Business A."}
+                      time={"1 hour ago"}
+                    />
+                    <NotificationList
+                      photo={image.Rectangle}
+                      cardtext={"Malu Romero sent an invoice for"}
+                      cardlink={" Business A."}
+                      time={"1 hour ago"}
+                    />
+                    <NotificationList
+                      photo={image.Rectangle}
+                      cardtext={"Malu Romero sent an invoice for"}
+                      cardlink={" Business A."}
+                      time={"1 hour ago"}
+                    />
                     <NotificationList
                       photo={image.Rectangle}
                       cardtext={"Malu Romero sent an invoice for"}
@@ -127,24 +143,48 @@ export default function LandingPage() {
                   <div className="cardHeader">
                     <h3 className="cardHeading">History</h3>
                   </div>
-                  <div className="cardBody">
+                  <div className="cardBody historyCardBody">
                     <NotificationList
                       photo={image.Rectangle}
+                      batchClass="batchClass"
                       cardtext={"To Business A"}
                       time={"1 hour ago"}
                       revenue={"-$50.00"}
                     />
                     <NotificationList
                       photo={image.Rectangle}
+                      batchClass="batchClass"
                       cardtext={"To Business A"}
                       time={"1 hour ago"}
-                      revenue={"-$50.00"}
+                      revenue={"-$60.00"}
                     />
                     <NotificationList
                       photo={image.Rectangle}
+                      batchClass="batchClass"
                       cardtext={"To Business A"}
                       time={"1 hour ago"}
-                      revenue={"-$50.00"}
+                      revenue={"-$70.00"}
+                    />
+                    <NotificationList
+                      photo={image.Rectangle}
+                      batchClass="batchClass"
+                      cardtext={"To Business A"}
+                      time={"1 hour ago"}
+                      revenue={"-$80.00"}
+                    />
+                    <NotificationList
+                      photo={image.Rectangle}
+                      batchClass="batchClass"
+                      cardtext={"To Business A"}
+                      time={"1 hour ago"}
+                      revenue={"-$10.00"}
+                    />
+                    <NotificationList
+                      photo={image.Rectangle}
+                      batchClass="batchClass"
+                      cardtext={"To Business A"}
+                      time={"1 hour ago"}
+                      revenue={"-$20.00"}
                     />
                   </div>
                   <div className="cardFooter">

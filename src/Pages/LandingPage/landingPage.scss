@@ -51,22 +51,13 @@
         padding: 5px 24px;
       }
     }
+    @include md {
+      margin-bottom: 30px;
+    }
   }
 }
 .payments {
   width: 100%;
-
-  .customCard {
-    padding: 23px 0 23px 35px;
-    transition: 0.5s;
-    &:hover {
-      box-shadow: 0px 4px 45px #e3e3e3;
-    }
-  }
-
-  .receive {
-    margin: 0 0 22px 0;
-  }
 }
 
 .notificationWrapper {
@@ -81,6 +72,10 @@
     }
     .cardBody {
       margin-bottom: 50px;
+    }
+    .notificationCardBody {
+      height: 252px;
+      overflow: scroll;
     }
 
     .cardFooter {
@@ -97,14 +92,6 @@
       );
       padding: 50px 0 0px 0;
       border-radius: 20px;
-
-      // .customLink {
-      //   display: flex;
-      //   justify-content: center;
-      //   border-radius: 2px;
-      //   padding: 16px 0 16px 0;
-      //   width: 100%;
-      // }
     }
   }
   @include mmd {
@@ -116,6 +103,11 @@
   .customCard {
     .cardBody {
       margin-bottom: 37px;
+    }
+    .historyCardBody {
+      height: 150px;
+      overflow: scroll;
+      padding: 0 20px 0 0;
     }
   }
 }

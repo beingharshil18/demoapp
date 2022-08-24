@@ -1,5 +1,5 @@
 import React from "react";
-import PrimaryButton from "../../components/PrimaryButton/primaryButton";
+import CustomButton from "../CustomButton/customButton";
 
 import { ReactComponent as Logo } from "../../Assets/Images/logo.svg";
 import { ReactComponent as HomeIcon } from "../../Assets/Images/HomeIcon.svg";
@@ -39,14 +39,20 @@ export default function CustomHeader() {
             </div>
 
             <div className="navBtn">
-              <div className="profileDrpDown">
-                <button className="profileBtn">
-                  <UnionIcon />
-                </button>
+              <div className="drpdownWrapper">
+                <div className="profileDrpDown">
+                  <button className="profileBtn">
+                    <UnionIcon />
+                  </button>
+                </div>
                 <DropIcon />
               </div>
 
-              <PrimaryButton btn="Send Invoice " icon={<NavBtn />} />
+              <CustomButton
+                btnClass="btnPrimary"
+                btnLabel="Send Invoice "
+                icon={<NavBtn />}
+              />
             </div>
           </div>
         </div>
